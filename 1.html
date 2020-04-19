@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>
+		How to use a img to be a url.
+		</title>
+	</head>
+	<body bgcolor='#F8F8FF'>
+		<h1 style='font-size:80;background-color:#FFFFFF' align='center'>
+		如何在html中使用图像作为超链接？
+		</h1>
+		<br />
+		<b style='font-size:45px;color:#A3A3A3'>
+		如下即为实例(点击即可进入百度官网)
+		</b>
+		<br />
+		<a href='https://www.baidu.com/'>
+		<img src='logo.png' alt='百度logo' width='100%'>
+		</a>
+		<p style='font-size:40px;background-color:#ffffff'>
+		好，在亲自使用图像超链接后，相比你已经发现图像超链接相比于文字超链接更加的直观，易懂
+			<br />
+		接下来，让我们看看图像超链接是如何实现的？
+		</p>
+		<p>
+		<img src='code.png' alt='如果你看到这段文字，请联系我获取未显示的图片' width='100%'>
+		</p>
+		<br />
+		<b style='font-size:40px;background-color:#ffffff'>
+		首先，我们在a标签的开始标签使用href属性定义超链接的指向网址
+		<br />
+		然后使用img标签定义一个图像，后面的src属性定义了图像的位置.图像既可以使用一个url链接;也可以将图像存储在与html文件相同的目录下,如此只需要输入图像的名称即可，此处为'logo.png'.
+		<br />
+		alt属性定义图像的名称，在图片无法正常加载时，浏览器会显示出图片的名称，告诉用户这张图片的内容,例如
+		<br />
+		<br />
+		<img src='nopic' alt='南方拍摄的荷花'>
+		<br />
+		<br />
+		假设上方应当显示一张荷花的图片，但是由于某种原因，图片未能加载，浏览器便将alt属性定义的'南方拍摄的荷花'显示了出来
+		<br />
+		width属性则为宽度，定义了图像的应该占有屏幕宽度的多少，既可以输入数字(像素点做单位),也可以输入百分比，例如100%，图像便会使用屏幕宽度的100%。
+		<br />
+		同样，height属性也可以用于定义高度，用法与width大同小异
+		<br />
+当然，你也可以选择不使用width和height，但是图片将会以原本大小呈现，在不同设备会有不同的大小，可能影响整体网页的和谐性
+		</b>
+	</body>
+</html>
